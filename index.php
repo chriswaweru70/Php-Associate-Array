@@ -1,5 +1,11 @@
 <?php 
 
+$task = [
+   'title' => 'Cleaning the bathroom',
+   'due' => 'Tomorrow',
+   'assigned_To' => 'Wife',
+   'Status'=> false
+];
 
 $person = [
    'age'=> 45,
@@ -38,4 +44,3 @@ $person['name'] = 'Jeffrey';
 
 require 'index.view.php';
 
-die('Hello World');

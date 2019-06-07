@@ -18,6 +18,37 @@
 
       <li><?= $animal ?></li>
         <?php endforeach; ?>
+
+       
+
+        <?php foreach ($task as $key => $val) : ?>
+
+        
+        <li>
+            <strong>
+             <!-- //uppercase letters. -->
+            <?= ucwords ($key); ?>: </strong> 
+            <?= $val; ?>
+          </li>
+        <?php endforeach; ?>
+
+      <li>
+
+      <strong>Status: </strong> 
+      <?php
+
+
+      if ( $task['status']) {
+        echo  'Finished';
+
+      } else {
+
+        echo 'Unfinished';
+      }
+      ?>
+      
+    </li>
+
     </ul>
 </body>
 </html>
